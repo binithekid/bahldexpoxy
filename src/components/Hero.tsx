@@ -38,7 +38,7 @@ const Hero = () => {
             transition={{ delay: 0.5, duration: 0.7, ease: "easeInOut" }}
             className="md:text-5xl text-3xl text-center md:px-0 px-10 tracking-tight text-gray-800 font-bold"
           >
-            Empowering Africa's Future through the Art of Epoxy
+            Empowering Africa&apos;s Future through the Art of Epoxy
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}

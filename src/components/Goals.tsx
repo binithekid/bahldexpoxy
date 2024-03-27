@@ -56,9 +56,9 @@ const Goals = () => {
 
           <p className="text-slate-500 text-sm md:text-xl font-light">
             To be the leading empowerment force and sustainability champion in
-            Ethiopia's epoxy industry, reducing youth unemployment equipping
-            with essential skills, and transforming spaces with eco-friendly,
-            high-quality epoxy applications.
+            Ethiopia&apos;s epoxy industry, reducing youth unemployment
+            equipping with essential skills, and transforming spaces with
+            eco-friendly, high-quality epoxy applications.
           </p>
           <button className="w-max mt-1 md:text-lg text-sm font-semibold bg-white rounded-lg py-2 px-3 md:px-4 text-gray-800 buttonshadow transition-all hover:opacity-70">
             Learn More
@@ -83,7 +83,7 @@ const Goals = () => {
           className="text-slate-500 md:text-center md:w-2/3 text-sm md:text-xl font-light"
         >
           We envision Bahld Epoxy as the leading innovator and educator in
-          Africa's epoxy industry, transforming lives and spaces through
+          Africa&apos;s epoxy industry, transforming lives and spaces through
           exceptional training, craftsmanship, and sustainable solutions.
         </motion.p>
         <motion.div

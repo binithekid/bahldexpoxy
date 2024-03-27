@@ -49,14 +49,14 @@ const About = () => {
             Bahld Epoxy, established September 2011 in London, is a pioneering
             Epoxy company and training center located in Addis Ababa, Ethiopia,
             around Bole Bulbula. Our diverse projects are not just about epoxy;
-            they're about
+            they&apos;re about
             <span className="font-semibold text-gray-600">
               {" "}
               empowering individuals, enhancing spaces, and making a positive
               impact.
             </span>{" "}
-            By choosing Bahld Epoxy, you're not just investing in a service,
-            you're
+            By choosing Bahld Epoxy, you&apos;re not just investing in a
+            service, you&apos;re
             <span className="font-semibold text-gray-600">
               {" "}
               contributing to a brighter future for Ethiopia and its youth.

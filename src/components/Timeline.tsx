@@ -66,12 +66,12 @@ const Timeline = () => {
           viewport={{ once: true }}
           className="text-slate-500 md:w-3/4 text-sm md:text-xl md:text-center font-light"
         >
-          We believe in the transformative power of epoxy. At Bahld Epoxy, we're
-          fueled by a passion to unleash the creativity and potential of young
-          Ethiopians, fostering a vibrant community of epoxy artists and
-          professionals across the continent. With ambitious goals and a
-          commitment to sustainability, we're on a mission to redefine the epoxy
-          landscape in Africa.
+          We believe in the transformative power of epoxy. At Bahld Epoxy,
+          we&apos;re fueled by a passion to unleash the creativity and potential
+          of young Ethiopians, fostering a vibrant community of epoxy artists
+          and professionals across the continent. With ambitious goals and a
+          commitment to sustainability, we&apos;re on a mission to redefine the
+          epoxy landscape in Africa.
         </motion.p>
       </div>
 
