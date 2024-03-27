@@ -2,32 +2,87 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-image: radial-gradient(
+    circle 500px at 50% 200px,
+    #c9ebff,
+    transparent
+  );
+  background-attachment: fixed;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.slider {
+  overflow: hidden;
+
+  position: relative;
+}
+
+.slider .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: slider 25s infinite;
+}
+
+.slider .slide:nth-child(1) {
+  background-image: url("/image1.jpg");
+  animation-delay: 0s;
+}
+
+.slider .slide:nth-child(2) {
+  background-image: url("/image2.jpg");
+  animation-delay: -5s;
+}
+
+.slider .slide:nth-child(3) {
+  background-image: url("/image3.jpg");
+  animation-delay: -10s;
+}
+
+.slider .slide:nth-child(4) {
+  background-image: url("/image4.jpg");
+  animation-delay: -15s;
+}
+
+.slider .slide:nth-child(5) {
+  background-image: url("/image5.jpg");
+  animation-delay: -20s;
+}
+
+@keyframes slider {
+  0%,
+  12%,
+  100% {
+    opacity: 1;
+    animation-timing-function: ease;
+    z-index: 0;
   }
+  20% {
+    opacity: 0;
+    animation-timing-function: step-end;
+    z-index: 0;
+  }
+  92% {
+    opacity: 1;
+    animation-timing-function: step-end;
+    z-index: -1;
+  }
+}
+
+.buttonshadow {
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.custom-select {
+  /* Your existing Tailwind CSS classes */
+  padding-right: 1.5rem; /* Adjust the value as needed */
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%23000000" class="bi bi-chevron-down" viewBox="0 0 16 16"%3E%3Cpath d="M3.646 5.646a.5.5 0 0 1 .708 0L8 9.293l3.646-3.647a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 0-.708z"/%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-position: right 0.5rem top 50%; /* Adjust position as needed */
+  background-size: 1.4em; /* Adjust size as needed */
 }
