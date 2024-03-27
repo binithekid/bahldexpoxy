@@ -106,7 +106,7 @@ const About = () => {
           <Image
             src={Mission}
             alt="header"
-            className="rounded-lg mt-2 md:mt-8 shadow-sm"
+            className="rounded mt-2 md:mt-8 shadow-sm"
           />
         </motion.div>
       </div>
