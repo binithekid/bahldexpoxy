@@ -2,16 +2,7 @@ import { motion } from "framer-motion";
 import { useEffect } from "react";
 import Logo from "../../public/images/iconlogo.png";
 import Image from "next/image";
-
-const images = [
-  "/image1.jpg",
-  "/image2.jpg",
-  "/image3.jpg",
-  "image4.jpg",
-  "image5.jpg",
-];
-
-const fadeDuration = 5000; // Adjust the duration of each fade (in milliseconds)
+import Link from "next/link";
 
 const Hero = () => {
   useEffect(() => {
@@ -57,9 +48,11 @@ const Hero = () => {
             exit={{ opacity: 0, y: 20 }}
             transition={{ delay: 1.1, duration: 0.7, ease: "easeInOut" }}
           >
-            <button className="md:text-lg mt-1 text-sm font-semibold bg-white rounded-lg px-3 py-2 md:py-2 md:px-4 text-gray-800 buttonshadow transition-all hover:opacity-70">
-              Learn About Us
-            </button>
+            <Link href="/services">
+              <button className="md:text-lg mt-1 text-sm font-semibold bg-white rounded-lg px-3 py-2 md:py-2 md:px-4 text-gray-800 buttonshadow transition-all hover:opacity-70">
+                Find Out More
+              </button>
+            </Link>
           </motion.div>
         </div>
       </div>

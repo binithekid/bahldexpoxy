@@ -7,7 +7,7 @@ const Footer = () => {
       <Image src={Logo} alt="Logo" width={120} />
 
       <p className="text-slate-500 w-2/3 text-center text-sm font-light">
-        © Bahld Epoxy - All rights reserved
+        © Bahld Epoxy 2024 - All rights reserved
       </p>
     </div>
   );

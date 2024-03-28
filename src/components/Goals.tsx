@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import photo from "../../public/image1.jpg";
 import Image from "next/image";
 import Mission from "../../public/face.jpg";
+import Link from "next/link";
 
 const Goals = () => {
   const item = {
@@ -60,9 +61,11 @@ const Goals = () => {
             equipping with essential skills, and transforming spaces with
             eco-friendly, high-quality epoxy applications.
           </p>
-          <button className="w-max mt-1 md:text-lg text-sm font-semibold bg-white rounded-lg py-2 px-3 md:px-4 text-gray-800 buttonshadow transition-all hover:opacity-70">
-            Learn More
-          </button>
+          <Link href="/services">
+            <button className="w-max mt-1 md:text-lg text-sm font-semibold bg-white rounded-lg py-2 px-3 md:px-4 text-gray-800 buttonshadow transition-all hover:opacity-70">
+              Learn More
+            </button>
+          </Link>
         </motion.div>
       </div>
       <div className="flex-col gap-2 px-4 md:px-40 py-40 md:py-10 flex w-full md:items-center justify-center">

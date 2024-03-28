@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import photo from "../../public/image2.jpg";
 import Image from "next/image";
 import Mission from "../../public/mission.png";
+import Link from "next/link";
 
 const About = () => {
   const item = {
@@ -62,9 +63,11 @@ const About = () => {
               contributing to a brighter future for Ethiopia and its youth.
             </span>
           </p>
-          <button className="md:text-lg w-max mt-1 text-sm font-semibold bg-white rounded-lg px-3 py-2 md:py-2 md:px-4 text-gray-800 buttonshadow transition-all hover:opacity-70">
-            Learn More
-          </button>
+          <Link href="/about">
+            <button className="md:text-lg w-max mt-1 text-sm font-semibold bg-white rounded-lg px-3 py-2 md:py-2 md:px-4 text-gray-800 buttonshadow transition-all hover:opacity-70">
+              Learn More
+            </button>
+          </Link>
         </motion.div>
         <motion.div
           variants={itemTwo}

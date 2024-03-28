@@ -38,18 +38,16 @@ const NavBar = () => {
         </div>
       </Link>
       <div className="md:flex hidden font-light flex-row gap-16">
-        <Link href="/work">
-          <p className="text-gray-800 hover:opacity-70 transition-all">
-            Services
-          </p>
-        </Link>
-        <Link href="/work">
-          <p className="text-gray-800 hover:opacity-70 transition-all">
-            Gallery
-          </p>
+        <Link href="/">
+          <p className="text-gray-800 hover:opacity-70 transition-all">Home</p>
         </Link>
         <Link href="/about">
           <p className="text-gray-800 hover:opacity-70 transition-all">About</p>
+        </Link>
+        <Link href="/services">
+          <p className="text-gray-800 hover:opacity-70 transition-all">
+            Services
+          </p>
         </Link>
         <Link href="/contact">
           <p className="text-gray-800 hover:opacity-70 transition-all">
@@ -85,9 +83,9 @@ const NavBar = () => {
             transition={{ duration: 0.2 }}
             className="md:hidden absolute h-screen bg-[white] top-20 left-0 right-0 gap-20 pt-20 pb-8 flex flex-col items-center z-20"
           >
-            <Link href="/work">
-              <p className="text-slate-800 text-lg font-light hover:opacity-70 transition-all">
-                Work
+            <Link href="/">
+              <p className="text-gray-800 hover:opacity-70 transition-all">
+                Home
               </p>
             </Link>
             <Link href="/about">
@@ -95,9 +93,9 @@ const NavBar = () => {
                 About
               </p>
             </Link>
-            <Link href="/blog">
+            <Link href="/services">
               <p className="text-slate-800 text-lg font-light hover:opacity-70 transition-all">
-                Blog
+                Services
               </p>
             </Link>
             <Link href="/contact">

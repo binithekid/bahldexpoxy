@@ -33,7 +33,7 @@ const Contact = () => {
             <h1 className="md:text-4xl text-2xl tracking-tight text-gray-800 font-bold">
               Connect With Us 👋
             </h1>
-            <div className="md:w-3/4">
+            <div className="">
               <p className="font-light mt-1 md:text-base text-sm text-slate-500">
                 Feel free to reach out to us with any inquiries, questions, or
                 feedback you may have. We value your input and are here to
@@ -92,7 +92,7 @@ const Contact = () => {
               placeholder="How can we help?"
             />
             <button className="w-max md:text-lg text-sm font-semibold bg-white rounded-lg py-2 px-3 md:px-4 text-gray-800 buttonshadow transition-all hover:opacity-70">
-              Submit{" "}
+              Submit
             </button>
           </form>
         </motion.div>
