@@ -32,9 +32,11 @@ const Map = () => {
 
       const { Map } = await loader.importLibrary("maps");
 
+      const { Marker } = await loader.importLibrary("marker");
+
       const position = {
-        lat: 51.5076,
-        lng: 0.2212,
+        lat: 9.01358,
+        lng: 38.76287,
       };
 
       const mapOptions = {
@@ -44,6 +46,11 @@ const Map = () => {
       };
 
       const map = new Map(mapRef.current as HTMLDivElement, mapOptions);
+
+      const marker = new Marker({
+        map: map,
+        position: position,
+      });
     };
 
     initMap();
@@ -76,10 +83,10 @@ const Map = () => {
         <div className="flex mt-3 flex-col gap-1 text-sm font-light text-slate-500">
           <p className="font-normal text-gray-700 text-[1rem]">Headquarters</p>
           <p>Bahld Epoxy</p>
-          <p>58 Whitehall Road</p>
-          <p>London</p>
-          <p>UB8 2DQ</p>
-          <p>United Kingdom</p>
+          <p>Bole Bulbula Maryam Mazorya</p>
+          <p>Addis Ababa</p>
+          <p>XQ2P WGM</p>
+          <p>Ethiopia</p>
         </div>
       </motion.div>
     </main>
