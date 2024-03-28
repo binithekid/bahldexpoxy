@@ -75,14 +75,14 @@ const services = () => {
                   Ababa, Ethiopia,
                 </span>{" "}
                 around Bole Bulbula. Our diverse projects are not just about
-                epoxy; they're about{" "}
+                epoxy; they&apos;re about{" "}
                 <span className="font-semibold text-gray-600">
                   {" "}
                   empowering individuals, enhancing spaces, and making a
                   positive impact.{" "}
                 </span>{" "}
-                By choosing Bahld Epoxy, you're not just investing in a service,
-                you're contributing to a{" "}
+                By choosing Bahld Epoxy, you&apos;re not just investing in a
+                service, you&apos;re contributing to a{" "}
                 <span className="font-semibold text-gray-600">
                   brighter future for Ethiopia and its youth.
                 </span>
@@ -156,10 +156,10 @@ const services = () => {
             viewport={{ once: true }}
             className="text-slate-500 md:text-center md:w-2/3 text-sm md:text-xl font-light"
           >
-            At Bahld Epoxy, our team isn't just a collection of individuals;
-            it's a family fueled by shared values. Innovation, empowerment, and
-            sustainability are at the heart of everything we do. Mamush, our
-            visionary CEO, leads the way with his passion
+            At Bahld Epoxy, our team isn&apos;t just a collection of
+            individuals; it&apos;s a family fueled by shared values. Innovation,
+            empowerment, and sustainability are at the heart of everything we
+            do. Mamush, our visionary CEO, leads the way with his passion
           </motion.p>
           <motion.div
             variants={itemThree}
